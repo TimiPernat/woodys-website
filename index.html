@@ -22,13 +22,21 @@
                     </svg>
                 </button>
                 <div id="nav-links">
-                    <a class="nav-link" href="#">Domov</a>
-                    <a class="nav-link" href="#about-us">O nas</a>
-                    <a class="nav-link" href="#menu">Ponudba</a>
-                    <a class="nav-link" href="#wagyu">Wagyu</a>
+                    <a id="homeButton" class="nav-link" href="#home-screen">Domov</a>
+                    <a id="aboutUsButton" class="nav-link" href="#about-us">O nas</a>
+                    <a id="menuButton" class="nav-link" href="#menu">Ponudba</a>
+                    <a id="wagyuButton" class="nav-link" href="#wagyu">Wagyu</a>
                 </div>
             </div>
         </nav>
+
+        <div class="language-button">
+            <button class="lang-btn" id="primary-lang-btn">SL</button>
+            <div class="lang-options">
+                <button class="lang-btn" id="en-btn">EN</button>
+                <button class="lang-btn" id="de-btn">DE</button>
+            </div>
+        </div>
 
         <section id="home-screen">
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -41,8 +49,8 @@
                     <div class="carousel-item active">
                         <img src="images/photos-of-the-restaruant/notranjost-restavracije.JPG" class="d-block w-100" alt="notranjost-restavracije">
                         <div class="carousel-caption d-none d-md-block">
-                        <h3>Woody's Restavracija</h3>
-                        <p>Pridi lačen, odidi srečen!</p>
+                        <h3 id="title">Woody's Restavracija</h3>
+                        <p id="slogan">Pridi lačen, odidi srečen!</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -67,28 +75,28 @@
             </div>
         </section>
 
-        <h2 class="section-header background-about-us-header">O nas</h2>
+        <h2 id="aboutUsTitle" class="section-header background-about-us-header">O nas</h2>
         
         <section id="about-us">
             <div class="section">
                 <div class="text-section">
-                    <p class="display-text">
+                    <p id="aboutUsText1" class="display-text">
                         Z bratom sva z združenimi močmi odprla restavracijo, kjer združujeva ljubezen do kakovostne hrane in prijetnega vzdušja.
                         Naša ponudba zajema izvrstne burgerje, okusne testenine, raznovrstne sladice, osvežilne koktejle in še veliko več.
                         Verjamemo, da dobra hrana prinaša veselje, zato skrbno izbiramo le najboljše sestavine za vsako jed.
-                        <a href="#" id="show-more" class="display-text show-more-link">Pokaži več</a>
                     </p>
-                    <p class="display-text hidden" id="more-text-1">
+                    <a href="#" id="showMore" class="display-text show-more-link">Pokaži več</a>
+                    <p id="aboutUsText2" class="display-text hidden">
                         Naša restavracija se nahaja v bližini centra Ptuja in nudi prijeten ambient, ki ustvarja občutek domačnosti in topline.
                         Prostori so zasnovani tako, da se pri nas vsak gost počuti sproščeno in dobrodošlo.
                         Poseben poudarek dajemo kakovosti hrane in vrhunski storitvi, da zagotovimo edinstveno izkušnjo za vse naše obiskovalce.
                     </p>
-                    <p class="display-text hidden" id="more-text-2">
+                    <p id="aboutUsText3" class="display-text hidden">
                         Naš kolektiv sestavljajo predvsem prijatelji, kar pripomore k prijaznemu in sproščenemu vzdušju v lokalu.
                         Vsi zaposleni delijo najino strast do kulinarike in prijazne postrežbe.
                         Skupaj ustvarjamo restavracijo, kjer se gostje vedno radi vračajo.
-                        <a href="#" id="show-less" class="display-text hidden">Pokaži manj</a>
                     </p>
+                    <a href="#" id="showLess" class="display-text hidden">Pokaži manj</a>
                 </div>
                 <div class="img-section">
                     <img class="decoration-image" src="images/other-photos/ponudba.webp" alt="three-dishes">
@@ -96,83 +104,86 @@
             </div>
         </section>
 
-        <h2 class="section-header" style="background-color: #eee7d7;">Ponudba</h2>
+        <h2 id="menuTitle" class="section-header" style="background-color: #eee7d7;">Ponudba</h2>
 
         <section id="menu">
             <div id="menu-section">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner rounded">
                         <div class="carousel-item active">
-                            <img src="images/menu-images/meni/prva-stran.png" class="d-block w-100" alt="first menu page">
+                            <img id="image1" src="images/menu-slo/1-stran.jpg" class="d-block w-100" alt="first menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/druga-stran.png" class="d-block w-100" alt="second menu page">
+                            <img id="image2" src="images/menu-slo/2-stran.jpg" class="d-block w-100" alt="second menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/tretija-stran.png" class="d-block w-100" alt="third menu page">
+                            <img id="image3" src="images/menu-slo/3-stran.jpg" class="d-block w-100" alt="third menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/cetrta-stran.png" class="d-block w-100" alt="fourth menu page">
+                            <img id="image4" src="images/menu-slo/4-stran.jpg" class="d-block w-100" alt="fourth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/peta-stran.png" class="d-block w-100" alt="fifth menu page">
+                            <img id="image5" src="images/menu-slo/5-stran.jpg" class="d-block w-100" alt="fifth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/sesta-stran.png" class="d-block w-100" alt="sixth menu page">
+                            <img id="image6" src="images/menu-slo/6-stran.jpg" class="d-block w-100" alt="sixth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/sedma-stran.png" class="d-block w-100" alt="seventh menu page">
+                            <img id="image7" src="images/menu-slo/7-stran.jpg" class="d-block w-100" alt="seventh menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/osma-stran.png" class="d-block w-100" alt="eighth menu page">
+                            <img id="image8" src="images/menu-slo/8-stran.jpg" class="d-block w-100" alt="eighth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/deveta-stran.png" class="d-block w-100" alt="ninth menu page">
+                            <img id="image9" src="images/menu-slo/9-stran.jpg" class="d-block w-100" alt="ninth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/deseta-stran.png" class="d-block w-100" alt="tenth menu page">
+                            <img id="image10" src="images/menu-slo/10-stran.jpg" class="d-block w-100" alt="tenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/enajsta-stran.png" class="d-block w-100" alt="eleventh menu page">
+                            <img id="image11" src="images/menu-slo/11-stran.jpg" class="d-block w-100" alt="eleventh menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/dvanajsta-stran.png" class="d-block w-100" alt="twelfth menu page">
+                            <img id="image12" src="images/menu-slo/12-stran.jpg" class="d-block w-100" alt="twelfth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/trinajsta-stran.png" class="d-block w-100" alt="tirthteenth menu page">
+                            <img id="image13" src="images/menu-slo/13-stran.jpg" class="d-block w-100" alt="tirthteenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/stirinajsta-stran.png" class="d-block w-100" alt="Fourteenth menu page">
+                            <img id="image14" src="images/menu-slo/14-stran.jpg" class="d-block w-100" alt="Fourteenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/petnajsta-stran.png" class="d-block w-100" alt="Fifteenth menu page">
+                            <img id="image15" src="images/menu-slo/15-stran.jpg" class="d-block w-100" alt="Fifteenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/sestnajsta-stran.png" class="d-block w-100" alt="Sixteenth menu page">
+                            <img id="image16" src="images/menu-slo/16-stran.jpg" class="d-block w-100" alt="Sixteenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/sedemnajsta-stran.png" class="d-block w-100" alt="Seventeenth menu page">
+                            <img id="image17" src="images/menu-slo/17-stran.jpg" class="d-block w-100" alt="Seventeenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/osemnajsta-stran.png" class="d-block w-100" alt="Eighteenth menu page">
+                            <img id="image18" src="images/menu-slo/18-stran.jpg" class="d-block w-100" alt="Eighteenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/devetnajsta-stran.png" class="d-block w-100" alt="Nineteenth menu page">
+                            <img id="image19" src="images/menu-slo/19-stran.jpg" class="d-block w-100" alt="Nineteenth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/dvajseta-stran.png" class="d-block w-100" alt="Twentieth menu page">
+                            <img id="image20" src="images/menu-slo/20-stran.jpg" class="d-block w-100" alt="Twentieth menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/enaindvajseta-stran.png" class="d-block w-100" alt="Twenty-first menu page">
+                            <img id="image21" src="images/menu-slo/21-stran.jpg" class="d-block w-100" alt="Twenty-first menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/dvaindvajseta-stran.png" class="d-block w-100" alt="Twenty-second menu page">
+                            <img id="image22" src="images/menu-slo/22-stran.jpg" class="d-block w-100" alt="Twenty-second menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/triindvajseta-stran.png" class="d-block w-100" alt="Twenty-third menu page">
+                            <img id="image23" src="images/menu-slo/23-stran.jpg" class="d-block w-100" alt="Twenty-third menu page">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/menu-images/meni/stiriindvajseta-stran.png" class="d-block w-100" alt="Twenty-fourth menu page">
+                            <img id="image24" src="images/menu-slo/24-stran.jpg" class="d-block w-100" alt="Twenty-fourth menu page">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="image25" src="images/menu-slo/25-stran.jpg" class="d-block w-100" alt="Twenty-fifth menu page">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -189,15 +200,15 @@
             <div id="working-hours">
                 <div class="working-hours">
                     <section class="working-hours-section">
-                        <h2>Delovni čas</h2>
+                        <h2 id="workTimeTitle">Delovni čas</h2>
                         <div class="working-hours">
                             <div class="day">
                                 <span id="monday">Ponedeljek:</span>
-                                <span class="closed">Zaprto</span>
+                                <span id="closed" class="closed">Zaprto</span>
                             </div>
                             <div class="day">
                                 <span id="tuesday">Torek:</span>
-                                <span class="closed">Zaprto</span>
+                                <span id="closed2" class="closed">Zaprto</span>
                             </div>
                             <div class="day">
                                 <span id="wednesday">Sreda:</span>
@@ -217,11 +228,11 @@
                             </div>
                             <div class="day">
                                 <span id="sunday">Nedelja:</span>
-                                <span>12:00 - 22:00</span>
+                                <span>12:00 - 23:00</span>
                             </div>
                         </div>
                         <div class="kitchen-note">
-                            <p><strong>Opomba:</strong> Kuhinja se zapre eno uro pred zaprtjem.</p>
+                            <p id="workTimeNote"><strong>Opomba:</strong> Kuhinja se zapre eno uro pred zaprtjem lokala.</p>
                         </div>
                     </section>
                 </div>
@@ -288,23 +299,23 @@
             </div>
         </div>
 
-        <h2 class="section-header wagyu-header">Striploin Wagyu A5 Japonska, Kagoshima</h2>
+        <h2 id="wagyuTitle" class="section-header wagyu-header">Striploin Wagyu A5 Japonska, Kagoshima</h2>
 
         <section id="wagyu">
             <div class="section">
                 <div class="text-section">
-                    <p class="display-text">
+                    <p id="wagyuText1" class="display-text">
                         Striploin Wagyu A5 iz Japonske, regije Kagoshima, je eno najbolj prestižnih in iskanih vrst mesa na svetu.
                         Ponaša se z izjemno marmoriranostjo, kar pomeni, da je meso prepleteno z nežnimi plastmi maščobe, ki mu dajejo bogat, sočen okus.
-                        Ta stopnja marmoriranosti je eden glavnih razlogov, zakaj Wagyu A5 velja za vrhunski gurmanski izdelek.
-                        <a href="#" id="show-more-2" class="display-text show-more-link">Pokaži več</a>
+                        Ta stopnja marmoriranosti je eden glavnih razlogov, zakaj Wagyu A5 velja za vrhunski gurmanski izdelek.                        
                     </p>
-                    <p class="display-text hidden">
+                    <a href="#" id="showMoreWagyu" class="display-text show-more-link">Pokaži več</a>
+                    <p id="wagyuText2" class="display-text hidden">
                         Regija Kagoshima na Japonskem je znana po odličnih pogojih za rejo Wagyu goveda.
                         Zaradi blagih klimatskih razmer in visokih standardov v oskrbi živali, meso pridobi edinstveno teksturo in okus.
                         Govedo iz te regije se hrani z izbrano prehrano, kar dodatno vpliva na kakovost mesa.
                     </p>
-                    <p class="display-text hidden">
+                    <p id="wagyuText3" class="display-text hidden">
                         Wagyu A5 Striploin ima izjemno mehkobo in se dobesedno topi v ustih.
                         Zaradi visoke vsebnosti maščobe, ki je enakomerno razporejena po mesu, vsak grižljaj prinaša bogato in polno doživetje okusa.
                         Meso je primerno za hitro pripravo na žaru ali v ponvi, kjer se maščoba nežno topi, medtem ko se meso hitro skuha.
@@ -316,21 +327,22 @@
             </div>
             <div class="section">
                 <div class="text-section">
-                    <p class="display-text hidden">
+                    <p id="wagyuText4" class="display-text hidden">
                         Za Wagyu krave v regiji Kagoshima skrbijo z izjemno pozornostjo in predanostjo, da zagotovijo najvišjo kakovost mesa.
                         Krave imajo dovolj prostora za gibanje in bivajo v čistih in urejenih okoljih, kjer se lahko sprostijo in razvijajo brez stresa.
                         Pomemben del oskrbe je tudi zagotavljanje ustrezne higiene in stalnega dostopa do sveže vode.
                     </p>
-                    <p class="display-text hidden">
+                    <p id="wagyuText5" class="display-text hidden">
                         Prehrana Wagyu krav je skrbno nadzorovana in sestavljena iz posebne mešanice hranil, ki vključuje visokokakovostno zrnje, seno in občasno tudi pivo, kar pripomore k boljšemu okusu in marmoriranosti mesa.
                         Krave pogosto hranijo z roko, kar povečuje njihovo udobje in zmanjšuje stres.
                         Ta skrbno izbrana prehrana je ključna za razvoj edinstvene maščobe, ki daje Wagyu mesu značilno teksturo in okus.
                     </p>
-                    <p class="display-text hidden">
+                    <p id="wagyuText6" class="display-text hidden">
                         Poleg prehrane in higiene je pomemben del oskrbe tudi sprostitev in masaža krav, kar pomaga izboljšati cirkulacijo in enakomerno porazdelitev maščobe po telesu.
                         V nekaterih primerih kravam celo predvajajo pomirjujočo glasbo, kar prispeva k njihovemu dobremu počutju.
                         Vse te prakse skupaj ustvarjajo optimalne pogoje za razvoj vrhunskega Wagyu mesa, ki je cenjeno po vsem svetu.
-                        <a href="#" id="show-less-2" class="display-text">Pokaži manj</a>
+                    </p>
+                    <a href="#" id="showLessWagyu" class="display-text hidden">Pokaži manj</a>                
                 </div>
                 <div class="img-section">
                     <img class="decoration-image hidden" src="images/other-photos/wagyu-a5.jpg" alt="wagyu a5 meat">
