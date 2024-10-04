@@ -79,6 +79,11 @@ body {
     height: 70px;
     z-index: 1100;
     background-color: var(--primary-color);
+    transition: height 0.3s ease;
+}
+
+#navigation-bar.scrolled {
+    height: 50px;
 }
 
 /* Styles for logo image */
@@ -86,6 +91,11 @@ body {
     margin: 10%;
     height: 2.5em;
     background-color: #853241;
+    transition: height 0.3s ease;
+}
+
+#navigation-bar.scrolled .logo-img {
+    height: 2em;
 }
 
 /* Styles for dropdownbutton in navigation bar */
@@ -124,15 +134,28 @@ body {
     text-decoration: none;
     text-align: center;
     display: block;
+    transition: font-size 0.3s ease, padding 0.3s ease;
 }
 
 #nav-links a:hover {
     color: var(--hover-text-color);
 }
 
+#navigation-bar.scrolled #nav-links a {
+    font-size: 0.8rem;
+    padding: 5px;
+}
+
 /* Styles for home screen carousel */
 #home-screen {
     margin-top: 70px;
+}
+
+#home-screen .carousel-inner img {
+    height: auto;
+    max-height: 91vh; /* Nastavimo maksimalno višino carousela na 80% višine zaslona */
+    object-fit: cover; /* Poskrbimo, da slike ohranijo razmerje in zapolnijo prostor */
+    width: 100%; /* Slika naj se raztegne čez celotno širino */
 }
 
 /* Styles for section headers text */
@@ -432,6 +455,14 @@ body {
         flex-basis: 50%;
         box-sizing: border-box;
         padding: 80px;
+    }
+
+    #carouselExampleFade .carousel-item img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: auto;
+        max-height: 90vh;
     }
 }
 
