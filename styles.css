@@ -82,20 +82,12 @@ body {
     transition: height 0.3s ease;
 }
 
-#navigation-bar.scrolled {
-    height: 50px;
-}
-
 /* Styles for logo image */
 .logo-img {
     margin: 10%;
     height: 2.5em;
     background-color: #853241;
     transition: height 0.3s ease;
-}
-
-#navigation-bar.scrolled .logo-img {
-    height: 2em;
 }
 
 /* Styles for dropdownbutton in navigation bar */
@@ -139,11 +131,6 @@ body {
 
 #nav-links a:hover {
     color: var(--hover-text-color);
-}
-
-#navigation-bar.scrolled #nav-links a {
-    font-size: 0.8rem;
-    padding: 5px;
 }
 
 /* Styles for home screen carousel */
@@ -349,7 +336,7 @@ body {
 }
 
 /* Styles for navigation bar (wider than mobile) */
-@media (min-width: 601px) {
+@media (min-width: 765px) {
     #dropdown-button {
         display: none;
     }
@@ -431,6 +418,19 @@ body {
 
     .section:nth-of-type(2) {
         margin-top: 20px;
+    }
+
+    #navigation-bar.scrolled {
+        height: 50px;
+    }
+
+    #navigation-bar.scrolled .logo-img {
+        height: 2em;
+    }
+
+    #navigation-bar.scrolled #nav-links a {
+        font-size: 0.8rem;
+        padding: 5px;
     }
 }
 
